@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="sprout dev" />
+    <meta name="description" content="A simple HTML5 page example, using the three basic technologies. The HTML tags, CSS style and JS scripts, are all in the same document." />
+    <meta name="keywords" content="html5 example, single page example, example page" />
+    <meta name="color-schema" content="normal" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/brands.min.css">
+    <title>Travel Camp</title>
+    <style>
+      /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+      html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+      @font-face{font-family:"OfficeCodePro";font-weight:400;src:url(/assets/fonts/SourceCodePro-Regular.otf) format("opentype")}@font-face{font-family:"ArchivoNarrow";font-weight:400;src:url(/assets/fonts/ArchivoNarrow-Regular.otf) format("opentype")}:root{--body-background-color:#D1FCD8;--form-contact--background-color:#66DA70;--padding:.5rem;--margin:.5rem;--title-family:ArchivoNarrow;--text-family:OfficeCodePro;--border-radius:.5rem}body{-webkit-box-sizing:border-box;box-sizing:border-box;background-color:var(--body-background-color);background-image:url(/assets/img/19-2500x1667-0.5.webp);background-size:cover;background-position:center;background-repeat:no-repeat;background-attachment:fixed;font-family:var(--text-family)}.header{padding:var(--padding);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:4rem}.main{padding:var(--padding);min-height:calc(100vh - 18rem)}.title--page,.title--main{margin:0;font-family:var(--title-family)}.title--page{font-size:3rem}.title--main{font-size:2rem;text-align:center}.promotion-text > .text-container{padding:var(--padding)}.promotion-text > .text-container > p{font-size:1.25rem;margin:0}.contact-form{margin-top:var(--margin);padding:var(--padding);border-radius:var(--border-radius);background-color:var(--form-contact--background-color);height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}.form-field{margin-bottom:calc(var(--margin) / 2)}.form-label{margin-bottom:calc(var(--margin) / 2);display:block;font-size:1rem}.form-input{border:none;outline:none;-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;padding:var(--padding);border-radius:var(--border-radius);font-size:1rem;-webkit-transition-property:-webkit-box-shadow;transition-property:-webkit-box-shadow;-o-transition-property:box-shadow;transition-property:box-shadow;transition-property:box-shadow,-webkit-box-shadow;-webkit-transition-duration:.5s;-o-transition-duration:.5s;transition-duration:.5s}.form-input:focus{-webkit-box-shadow:inset 0 0 .5rem #53d2f9;box-shadow:inset 0 0 .5rem #53d2f9}.form-input--textarea{resize:none;height:128px}.button{display:inline-block;background-color:#31D3D6;border:none;outline:none;padding:var(--padding);border-radius:var(--border-radius);font-size:1rem;-webkit-transition-property:background-color;-o-transition-property:background-color;transition-property:background-color;-webkit-transition-duration:.5s;-o-transition-duration:.5s;transition-duration:.5s}.button:hover,.button:focus{background-color:#84E2FF}.footer{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:8rem;padding:var(--padding);padding-top:calc(var(--padding) * 4);padding-bottom:calc(var(--padding) * 4);background-color:#66DA70}.copyright{font-style:normal;font-size:.85rem;margin-bottom:var(--margin)}.footer-links > .link-container{margin-bottom:var(--margin)}.media-icon-container > a,.footer-links > .link-container > a{color:inherit;text-decoration:none}.social-media-section{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:var(--padding)}.media-icon-container > a > i{font-size:2rem}@media screen and (min-width: 321px){.title--page{font-size:2.95rem}.contact-form{width:300px;margin-left:auto;margin-right:auto}}@media screen and (min-width: 481px){.main{display:-ms-grid;display:grid;-ms-grid-rows:4rem 1fr;grid-template-rows:4rem 1fr;-ms-grid-columns:(50%)[2];grid-template-columns:repeat(2,50%)}.main > :nth-child(1){-ms-grid-row:1;-ms-grid-column:1}.main > :nth-child(2){-ms-grid-row:1;-ms-grid-column:2}.main > :nth-child(3){-ms-grid-row:2;-ms-grid-column:1}.main > :nth-child(4){-ms-grid-row:2;-ms-grid-column:2}.title--page{-ms-grid-row:1;grid-row-start:1;-ms-grid-row-span:1;grid-row-end:2;-ms-grid-column:1;grid-column-start:1;-ms-grid-column-span:2;grid-column-end:3;font-size:3rem}.promotion-text{-ms-grid-row:2;grid-row-start:2;-ms-grid-row-span:1;grid-row-end:3;-ms-grid-column:1;grid-column-start:1;-ms-grid-column-span:1;grid-column-end:2}.contact-form{-ms-grid-row:2;grid-row-start:2;-ms-grid-row-span:1;grid-row-end:3;-ms-grid-column:2;grid-column-start:2;-ms-grid-column-span:1;grid-column-end:3;margin:0;margin-left:auto;margin-right:auto}.footer-links{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center}}
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a href="#">
+          <img src="./assets/img/logoipsum-330.svg" alt="company logo">
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="title--page">Welcome to Travel Camp!!</h1>
+      <section class="promotion-text">
+        <div class="text-container">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe nobis quis illo similique laudantium animi quam architecto qui rerum, excepturi adipisci suscipit aliquam, esse mollitia delectus totam eius? Odit, ad!
+          Et cumque iure vel maxime. Consequatur dolorem commodi voluptate nostrum in similique, molestiae repellat laboriosam qui, fugiat provident velit numquam quia ipsam suscipit, voluptates eius aspernatur facilis necessitatibus rerum culpa!</p>
+        </div>
+      </section>
+      <form id="contact-form" class="contact-form" autocomplete="off">
+        <h2 class="title--main">Contact us!!</h2>
+        <div class="form-field">
+          <label for="fullname" class="form-label">Fullname: (*)</label>
+          <input type="text" name="fullname" id="fullname" class="form-input form-input--text" required >
+        </div>
+        <div class="form-field">
+          <label for="email" class="form-label">Email: (*)</label>
+          <input type="email" name="email" id="email" class="form-input form-input--text" required >
+        </div>
+        <div class="form-field">
+          <label for="subject" class="form-label">Subject: (*)</label>
+          <input type="text" name="subject" id="subject" class="form-input form-input--text" required >
+        </div>
+        <div class="form-field">
+          <label for="content" class="form-label">Content: (*)</label>
+          <textarea name="content" id="conntent" class="form-input form-input--textarea" required ></textarea>
+        </div>
+        <div class="form-buttons">
+          <input type="submit" value="send" class="button">
+          <input type="reset" value="clear" class="button">
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <address class="copyright">Travel Camp</address>
+      <section class="footer-links">
+        <div class="link-container">
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="link-container">
+          <a href="#">Term of service</a>
+        </div>
+      </section>
+      <section class="social-media-section">
+        <div class="media-icon-container">
+          <a href="#">
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </a>
+        </div>
+        <div class="media-icon-container">
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <div class="media-icon-container">
+          <a href="#">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+        </div>
+      </section>
+    </footer>
+    <script>
+      const year = new Date().getFullYear();
+      const copyrightIcon = () => {
+        return `<i class="fa-solid fa-copyright"></i>`;
+      }
+      const copyrigth = document.querySelector("footer.footer > address.copyright");
+      const form = document.getElementById("contact-form");
+      copyrigth.insertAdjacentText("beforeend", (" " + year));
+      copyrigth.insertAdjacentHTML("beforeend", (" " + copyrightIcon()));
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        window.alert("Message sended!!");
+        event.target.reset();
+        document.querySelector("#contact-form > .form-field > input").focus();
+      });
+      form.addEventListener("reset", () => {
+        document.querySelector("#contact-form > .form-field > input").focus();
+      });
+    </script>
+  </body>
+</html>
